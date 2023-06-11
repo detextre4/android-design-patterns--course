@@ -20,6 +20,7 @@ class HomePresenter(private val view : HomeContract.View) : HomeContract.Present
                     .setUsername("hola")
                     .setPassword("123456")
                     .build()
+                println(user)
 
                 view.hideLoader()
                 view.showFavoriteTransfer(favoriteList)
