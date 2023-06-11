@@ -58,6 +58,10 @@ class HomeFragment : Fragment(), HomeContract.View {
                 amountValueTextView.text = "$ $newValue"
             }
         })
+
+        homePresenter!!.getPercentageLiveData().observe(this, androidx.lifecycle.Observer<String> {
+                value -> percentageText.text = value
+        })
     }
 
     private fun initRecyclerView() {
