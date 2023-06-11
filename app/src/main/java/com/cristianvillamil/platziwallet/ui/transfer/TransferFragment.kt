@@ -52,6 +52,8 @@ class TransferFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         initAmountInputEditText()
         initRecyclerView()
+        transferButton.setOnClickListener {
+        }
     }
 
     private fun initRecyclerView() {
